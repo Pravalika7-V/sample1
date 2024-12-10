@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* table {
+        border-spacing: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Registration Form</h1>
+      <table>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="username" required /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="address" rows="3" cols="20" required></textarea></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+            <input type="radio" name="gender" /> Other
+          </td>
+        </tr>
+        <tr>
+          <td>Languages Known:</td>
+          <td>
+            <input type="checkbox" name="languages" /> English<br />
+            <input type="checkbox" name="languages" /> Telugu<br />
+            <input type="checkbox" name="languages" /> Hindi
+          </td>
+        </tr>
+        <tr>
+          <td>Programming Languages:</td>
+          <td>
+            <input type="checkbox" name="programming_languages" /> C<br />
+            <input type="checkbox" name="programming_languages" /> C++<br />
+            <input type="checkbox" name="programming_languages" /> Java<br />
+            <input type="checkbox" name="programming_languages" /> Python<br />
+            <input type="checkbox" name="programming_languages" /> JavaScript
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button type="submit">Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
